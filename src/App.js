@@ -29,7 +29,7 @@ function App() {
           />
         </div>
 
-        <h1 className="qoute font-bold m-3 p-2">{quote}</h1>
+        <h1 className="qoute font-bold m-1 p-2">{quote}</h1>
         <br />
         <button
           onClick={getQuote}
@@ -37,7 +37,7 @@ function App() {
         >
           What else about Chuck ?
         </button>
-        <footer className=" footer align-bottom absolute bottom-0  ">
+        <footer className=" footer align-bottom absolute bottom-0  mt-1 ">
           @ {year} Amwatah Obuya
         </footer>
       </div>
