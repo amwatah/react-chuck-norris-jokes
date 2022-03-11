@@ -4,11 +4,12 @@ import "./App.css";
 
 function App() {
   const [quote, setQuote] = useState();
+  const url = "http://api.icndb.com/jokes/random";
   const norrisImage =
     "https://cdn.dribbble.com/users/382712/screenshots/4165164/media/8e5141aa7ee4f9efd6a1597f3e463ae6.png?compress=1&resize=400x300";
   const year = new Date().getFullYear();
   async function getQuote() {
-    const url = "http://api.icndb.com/jokes/random";
+    
     axios.get(url).then((response) => {
       console.log(response.data.value.joke);
       setQuote(response.data.value.joke);
