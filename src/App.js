@@ -44,9 +44,9 @@ function App() {
             className="rounded-md w-[100vw] md:w-[50vw] "
           />
         </div>
-        <img src={quote.icon_url} alt="" />
+   
 
-        <h1 className="qoute font-bold m-1 p-2">{quote.value}</h1>
+        <h1 className="qoute font-bsold m-1 p-2">{quote?.value}</h1>
         <button
           onClick={getQuote}
           className=" bg-indigo-500 p-2 rounded-md uppercase  hover:bg-gradient-to-br hover:from-indigo-500 to hover:to-fuchsia-500 "
